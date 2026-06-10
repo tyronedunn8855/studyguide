@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Final Exam Study Guide</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:#0A0A0A;color:#F0ECE3;font-family:Arial,Helvetica,sans-serif;padding:0 0 60px;-webkit-text-size-adjust:100%}
+header{padding:28px 16px 0;max-width:900px;margin:0 auto}
+.ey{font-size:10px;letter-spacing:3px;color:#555;text-transform:uppercase;margin-bottom:6px}
+h1{font-size:40px;font-weight:900;text-transform:uppercase;letter-spacing:1px;line-height:1}
+h1 em{color:#E63329;font-style:normal}
+.sub{margin-top:6px;font-size:12px;color:#555}
+.tabs{max-width:900px;margin:20px auto 0;padding:0 16px;display:flex;gap:8px}
+button{-webkit-appearance:none;appearance:none;border:none;cursor:pointer;font-family:inherit}
+.tab{font-size:13px;font-weight:700;text-transform:uppercase;padding:11px 20px;border-radius:6px;background:#1A1A1A;color:#555;touch-action:manipulation}
+.tab.rc{background:#E63329;color:#fff}
+.tab.rb{background:#1A6FBF;color:#fff}
+.prog{max-width:900px;margin:16px auto 0;padding:0 16px}
+.prog-row{display:flex;justify-content:space-between;font-size:11px;color:#555;margin-bottom:4px}
+.prog-bg{height:3px;background:#222;border-radius:2px}
+.prog-bar{height:3px;border-radius:2px;width:0%;transition:width .3s}
+.srch{max-width:900px;margin:16px auto 0;padding:0 16px}
+input[type=text]{width:100%;background:#1A1A1A;border:1px solid #2A2A2A;border-radius:8px;padding:11px 14px;font-size:14px;color:#F0ECE3;font-family:inherit;outline:none;-webkit-appearance:none}
+input[type=text]::placeholder{color:#444}
+.panel{display:none;max-width:900px;margin:0 auto;padding:0 16px}
+.panel.on{display:block}
+.sec{margin-top:20px}
+.sec-hdr{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-radius:7px;cursor:pointer;margin-bottom:10px;touch-action:manipulation;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none}
+.sec-hdr.r{background:#1C0A09;border-left:4px solid #E63329}
+.sec-hdr.b{background:#09152A;border-left:4px solid #1A6FBF}
+.sec-ttl{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;pointer-events:none}
+.sec-cnt{font-size:11px;color:#555;pointer-events:none}
+.sec-body{display:block}
+.sec-body.closed{display:none}
+.note{background:#161616;border:1px solid #2A2A2A;border-radius:8px;padding:13px 15px;margin-bottom:10px;font-size:12px;color:#888;line-height:1.7}
+.note b{color:#E63329}
+.note.bl b{color:#1A6FBF}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:4px}
+.card{background:#1A1A1A;border:1px solid #2A2A2A;border-radius:9px;padding:13px;min-height:76px;display:flex;flex-direction:column;justify-content:space-between;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none}
+.card .trm{font-size:13px;font-weight:700;color:#F0ECE3;line-height:1.2;pointer-events:none}
+.card .dfn{font-size:12px;color:#F0ECE3;line-height:1.5;display:none;pointer-events:none}
+.card .tip{font-size:10px;color:#444;text-align:right;margin-top:6px;pointer-events:none}
+.card.fr{background:#200C0A;border-color:#E63329}
+.card.fb{background:#0B1E35;border-color:#1A6FBF}
+.card.fr .trm,.card.fb .trm{display:none}
+.card.fr .dfn,.card.fb .dfn{display:block}
+.card.fr .tip,.card.fb .tip{color:rgba(255,255,255,.3)}
+.foot{text-align:center;font-size:11px;color:#2A2A2A;margin-top:36px}
+</style>
+</head>
+<body>
+
+<header>
+  <p class="ey">June 2026 · Final Exams</p>
+  <h1>Study <em>Guide</em></h1>
+  <p class="sub">Tap any card to flip · tap again to go back</p>
+</header>
+
+<div class="tabs">
+  <button class="tab rc" id="tab-comm">Comm Media</button>
+  <button class="tab"    id="tab-cea">PLTW CEA</button>
+</div>
+
+<div class="prog">
+  <div class="prog-row"><span id="pl">0 terms reviewed</span><span id="pp">0%</span></div>
+  <div class="prog-bg"><div class="prog-bar" id="pb" style="background:#E63329"></div></div>
+</div>
+
+<div class="srch"><input type="text" id="si" placeholder="Search terms..."></div>
+
+<!-- COMM PANEL -->
+<div class="panel on" id="panel-comm">
+<div class="sec">
+  <div class="note"><b>SPACECAT</b> — your in-class analysis framework:<br>
+  <b>S</b>peaker · <b>P</b>urpose · <b>A</b>udience · <b>C</b>ontext · <b>E</b>xigence · <b>C</b>laims · <b>A</b>ppeals (Ethos/Pathos/Logos) · <b>T</b>one</div>
+</div>
+<div class="sec">
+  <div class="sec-hdr r" data-sec><span class="sec-ttl">Unit 1 — Mass Media Industries</span><span class="sec-cnt">23 terms ▾</span></div>
+  <div class="sec-body">
+  <div class="grid">
+    <div class="card" data-cls="fr"><p class="trm">Trade Books</p><p class="dfn">Books sold to the general public — novels, self-help, cookbooks, etc.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Textbooks</p><p class="dfn">Educational books made specifically for classroom use.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Professional / Scholarly Books</p><p class="dfn">Written for experts and researchers in a specific field.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Yellow Journalism</p><p class="dfn">Sensational, exaggerated news designed to shock and sell papers — not factual.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Tabloids</p><p class="dfn">Small-format papers focused on gossip, scandal, and dramatic headlines.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Broadsheet</p><p class="dfn">Large-format serious newspapers like the New York Times.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Consumer Magazines</p><p class="dfn">Magazines for the general public — Vogue, Sports Illustrated, Time.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Trade / Technical Magazines</p><p class="dfn">Magazines written for people working in a specific industry.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Muckrakers</p><p class="dfn">Early investigative journalists who exposed corruption and social problems.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">RIAA</p><p class="dfn">Recording Industry Association of America — protects music copyright, certifies gold/platinum records.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">File Sharing</p><p class="dfn">Distributing digital files online — often illegally without paying creators.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">DMCA</p><p class="dfn">Digital Millennium Copyright Act — federal law protecting digital content from piracy online.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Podcast</p><p class="dfn">On-demand audio show you subscribe to and stream — no broadcast schedule.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">FM Radio</p><p class="dfn">Clear sound, shorter range — local music and talk stations.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">AM Radio</p><p class="dfn">Travels farther but lower quality — used for talk radio and news.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Satellite Radio</p><p class="dfn">Paid subscription radio like SiriusXM — works nationwide, no local signal needed.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Blacklisting</p><p class="dfn">Banning someone from working in an industry — famous in 1950s Hollywood during the Red Scare.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Ancillary Rights</p><p class="dfn">Extra income streams from a media property — merchandise, sequels, licensing, theme parks.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Network</p><p class="dfn">A group of TV or radio stations that all broadcast the same content (NBC, CBS, Fox).</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Sweeps</p><p class="dfn">Rating periods where networks air their best content to attract more advertisers.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Demographics</p><p class="dfn">Statistics about an audience — age, gender, income, location, race.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Search Marketing</p><p class="dfn">Paying to appear at the top of Google results when users search certain keywords.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Digital Divide</p><p class="dfn">The gap between people who have reliable internet access and those who don't.</p><p class="tip">tap for def</p></div>
+  </div></div>
+</div>
+<div class="sec">
+  <div class="sec-hdr r" data-sec><span class="sec-ttl">Unit 2 — Marketing</span><span class="sec-cnt">9 terms ▾</span></div>
+  <div class="sec-body">
+  <div class="grid">
+    <div class="card" data-cls="fr"><p class="trm">Traditional Advertising</p><p class="dfn">TV, radio, billboards, print — broad reach, harder to target or measure.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Digital Advertising</p><p class="dfn">Social media ads, Google ads, email campaigns — targeted and trackable.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Ethos</p><p class="dfn">Appeal to credibility and trust — "doctors recommend this", celebrity endorsements.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Pathos</p><p class="dfn">Appeal to emotion — makes you feel sad, excited, scared, or inspired to act.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Logos</p><p class="dfn">Appeal to logic — uses facts, stats, and data to convince you rationally.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">PSA</p><p class="dfn">Public Service Announcement — non-profit ad for social good. No product being sold.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Billboard</p><p class="dfn">Large outdoor advertising display on roadsides or buildings.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Brand</p><p class="dfn">The overall identity of a company — its name, vibe, values, and reputation.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Logo</p><p class="dfn">The visual symbol representing a brand — Nike swoosh, Apple logo, McDonald's arches.</p><p class="tip">tap for def</p></div>
+  </div></div>
+</div>
+<div class="sec">
+  <div class="sec-hdr r" data-sec><span class="sec-ttl">Unit 3 — Video Essays</span><span class="sec-cnt">8 terms ▾</span></div>
+  <div class="sec-body">
+  <div class="note bl"><b>FAIR USE</b> — Protected when: (1) educational, commentary, parody, or news purpose · (2) limited amount used · (3) transformative — adds new meaning · (4) doesn't replace the original in the market. Example: 10 seconds of a song in a student review = likely Fair Use. Full song = not Fair Use.</div>
+  <div class="grid">
+    <div class="card" data-cls="fr"><p class="trm">Footage</p><p class="dfn">Raw video clips used in a project before editing.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Tracks</p><p class="dfn">Separate layers in a video editing timeline — video, voiceover, music.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Transitions</p><p class="dfn">Visual effects between clips — cuts, fades, dissolves, wipes.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">A Roll</p><p class="dfn">Primary footage — main subject talking to camera or the key action happening.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">B Roll</p><p class="dfn">Supplemental footage playing while A Roll audio continues — cutaways, establishing shots.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Lower Thirds</p><p class="dfn">Text overlay in the lower screen showing a person's name, title, or location.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Thumbnails</p><p class="dfn">Preview image representing a video — determines whether people click it.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Fair Use</p><p class="dfn">Legal right to use copyrighted material for education, commentary, parody, or news — must be transformative and not replace the original.</p><p class="tip">tap for def</p></div>
+  </div></div>
+</div>
+<div class="sec">
+  <div class="sec-hdr r" data-sec><span class="sec-ttl">Unit 4 — Film</span><span class="sec-cnt">8 terms ▾</span></div>
+  <div class="sec-body">
+  <div class="grid">
+    <div class="card" data-cls="fr"><p class="trm">Director</p><p class="dfn">The creative lead of a film — makes all major artistic decisions.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Costume Design</p><p class="dfn">Designing clothing that shows character personality, social status, and time period.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Score</p><p class="dfn">Original instrumental music composed specifically for the film.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Soundtrack</p><p class="dfn">Collection of songs used throughout a film — can include pre-existing popular music.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">SFX</p><p class="dfn">Sound Effects — added sounds like explosions, footsteps, door creaks.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Lighting</p><p class="dfn">How light and shadow set mood, reveal or conceal characters, and create atmosphere.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Casting</p><p class="dfn">The process of selecting actors for specific roles in a production.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">Tone</p><p class="dfn">The overall emotional feel or attitude of a film — dark, comedic, tense, hopeful.</p><p class="tip">tap for def</p></div>
+  </div></div>
+</div>
+<div class="sec">
+  <div class="sec-hdr r" data-sec><span class="sec-ttl">SPACECAT — Full Breakdown</span><span class="sec-cnt">8 terms ▾</span></div>
+  <div class="sec-body">
+  <div class="grid">
+    <div class="card" data-cls="fr"><p class="trm">S — Speaker</p><p class="dfn">Who created this? What is their background, credibility, or bias?</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">P — Purpose</p><p class="dfn">Why did they make this? What are they trying to achieve or change?</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">A — Audience</p><p class="dfn">Who is this made for? What does the audience already believe going in?</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">C — Context</p><p class="dfn">What was happening in society or history when this was created?</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">E — Exigence</p><p class="dfn">What urgent problem or event caused this piece to be created right now?</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">C — Claims</p><p class="dfn">What is the author's main argument or central point?</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">A — Appeals</p><p class="dfn">How do they use Ethos (credibility), Pathos (emotion), Logos (logic)?</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fr"><p class="trm">T — Tone</p><p class="dfn">What is the emotional attitude of the piece toward its subject?</p><p class="tip">tap for def</p></div>
+  </div></div>
+</div>
+</div><!-- /comm -->
+
+<!-- CEA PANEL -->
+<div class="panel" id="panel-cea">
+<div class="sec" style="margin-top:20px">
+  <div class="sec-hdr b" data-sec><span class="sec-ttl">Careers &amp; Organizations</span><span class="sec-cnt">11 terms ▾</span></div>
+  <div class="sec-body">
+  <div class="grid">
+    <div class="card" data-cls="fb"><p class="trm">Architect</p><p class="dfn">A professional trained in the art and science of designing and constructing buildings.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Civil Engineer</p><p class="dfn">An engineer trained to design and build public works — bridges, dams, roads, large infrastructure.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">AIA</p><p class="dfn">American Institute of Architects — the professional society representing architects in the US.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">ASCE</p><p class="dfn">American Society of Civil Engineers — the professional society for civil engineers.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">NAAB</p><p class="dfn">National Architectural Accrediting Board — the only agency that accredits architecture degree programs in the US.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">ABET</p><p class="dfn">Accredits college and university engineering programs to ensure quality standards.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">NCARB</p><p class="dfn">National Council of Architectural Registration Boards — made up of all 50 state licensing boards.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Building Codes</p><p class="dfn">Legal safety requirements covering structural, electrical, plumbing, and mechanical standards.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Charrette</p><p class="dfn">Intensive collaborative workshop where experts tackle a design problem together quickly.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Construction Documents</p><p class="dfn">All drawings, plans, and specifications for a construction project.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Municipality</p><p class="dfn">A city or town with its own incorporated local government.</p><p class="tip">tap for def</p></div>
+  </div></div>
+</div>
+<div class="sec">
+  <div class="sec-hdr b" data-sec><span class="sec-ttl">Design Principles &amp; Elements</span><span class="sec-cnt">13 terms ▾</span></div>
+  <div class="sec-body">
+  <div class="grid">
+    <div class="card" data-cls="fb"><p class="trm">Aesthetics</p><p class="dfn">The quality of an object relating to art, beauty, and taste.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Balance</p><p class="dfn">Equal visual weight distributed on both sides of a composition.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Emphasis</p><p class="dfn">Making one element stand out through contrast, size, or placement.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Rhythm</p><p class="dfn">A sense of flow created by repeating design elements in a pattern.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Repetition</p><p class="dfn">Using the same element multiple times throughout a design to create cohesion.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Movement</p><p class="dfn">The illusion of motion or direction created by how elements relate to each other.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Pattern</p><p class="dfn">A decorative design unit that repeats in a structured way.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Unity</p><p class="dfn">All design elements working together as one coherent whole.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Color</p><p class="dfn">Described by hue (the color), lightness (how light/dark), and saturation (how vivid).</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Form</p><p class="dfn">The shape and structure of something, separate from its material.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Line</p><p class="dfn">The edge or contour defining the boundary of a shape.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Element of Design</p><p class="dfn">A basic visual building block — line, shape, form, space, texture, color, value.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Principles of Design</p><p class="dfn">Rules for arranging design elements — balance, rhythm, emphasis, unity, variety.</p><p class="tip">tap for def</p></div>
+  </div></div>
+</div>
+<div class="sec">
+  <div class="sec-hdr b" data-sec><span class="sec-ttl">Structural Terms</span><span class="sec-cnt">10 terms ▾</span></div>
+  <div class="sec-body">
+  <div class="grid">
+    <div class="card" data-cls="fb"><p class="trm">Arch</p><p class="dfn">Curved structure spanning an opening, supporting load through axial compression — no tension.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Keystone</p><p class="dfn">Wedge-shaped stone at the crown (top) of an arch — locks the whole arch together.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Lintel</p><p class="dfn">Horizontal beam placed over a door or window opening to carry the weight above.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Post-and-Lintel</p><p class="dfn">Structural system using vertical posts and horizontal beams — the oldest construction method.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Facade</p><p class="dfn">The exterior face of a building, especially the front visible from the street.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Floor Joists</p><p class="dfn">Horizontal structural members carrying floor and ceiling load to the walls.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Header</p><p class="dfn">Horizontal structural member at the top of a door or window opening that redirects load.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Bearing Walls</p><p class="dfn">Solid walls that support each other and carry the roof load above.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Dead Load</p><p class="dfn">Permanent constant weight a structure carries — walls, floors, roof materials.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Live Load</p><p class="dfn">Temporary or variable weight — people, furniture, snow, wind pressure.</p><p class="tip">tap for def</p></div>
+  </div></div>
+</div>
+<div class="sec">
+  <div class="sec-hdr b" data-sec><span class="sec-ttl">Construction Materials</span><span class="sec-cnt">2 terms ▾</span></div>
+  <div class="sec-body">
+  <div class="grid">
+    <div class="card" data-cls="fb"><p class="trm">House Wrap</p><p class="dfn">Engineered membrane that blocks liquid water but lets water vapor escape.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Felt</p><p class="dfn">Tar-impregnated paper used as a moisture barrier under roofing shingles.</p><p class="tip">tap for def</p></div>
+  </div></div>
+</div>
+<div class="sec">
+  <div class="sec-hdr b" data-sec><span class="sec-ttl">Process &amp; Documentation</span><span class="sec-cnt">6 terms ▾</span></div>
+  <div class="sec-body">
+  <div class="grid">
+    <div class="card" data-cls="fb"><p class="trm">Feasibility Study</p><p class="dfn">Evaluation of all factors — cost, site, regulations — to determine if a project can realistically happen.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Portfolio (Architect)</p><p class="dfn">Professional documentation including sketches, drawings, renderings, and past project history.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Floor Plan</p><p class="dfn">Top-down architectural drawing showing room layout, walls, and dimensions.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Elevation</p><p class="dfn">Flat straight-on exterior view of one building side — shows height and facade details.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Site Access</p><p class="dfn">Entry and exit points connecting a building to the public roadway.</p><p class="tip">tap for def</p></div>
+    <div class="card" data-cls="fb"><p class="trm">Concept Map</p><p class="dfn">Diagram linking related ideas graphically to develop a fuller understanding of a topic.</p><p class="tip">tap for def</p></div>
+  </div></div>
+</div>
+</div><!-- /cea -->
+
+<p class="foot">56 total terms · works offline</p>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var cur = 'comm';
+
+  // CARDS — single delegated listener on document
+  document.addEventListener('touchend', handleTap, {passive: false});
+  document.addEventListener('click', handleTap);
+
+  var lastTarget = null;
+  function handleTap(e) {
+    // prevent double-fire on mobile (touchend + click)
+    if (e.type === 'click' && lastTarget === e.target) { lastTarget = null; return; }
+    if (e.type === 'touchend') lastTarget = e.target;
+
+    var card = e.target.closest('[data-cls]');
+    if (card) {
+      e.preventDefault();
+      var cls = card.getAttribute('data-cls');
+      var flipped = card.classList.contains(cls);
+      card.classList.toggle(cls, !flipped);
+      card.querySelector('.tip').textContent = flipped ? 'tap for def' : 'tap to flip back';
+      updProg();
+      return;
+    }
+
+    var sec = e.target.closest('[data-sec]');
+    if (sec) {
+      e.preventDefault();
+      sec.nextElementSibling.classList.toggle('closed');
+      return;
+    }
+  }
+
+  // TABS
+  document.getElementById('tab-comm').addEventListener('click', function(){ sw('comm'); });
+  document.getElementById('tab-cea').addEventListener('click',  function(){ sw('cea');  });
+
+  function sw(t) {
+    cur = t;
+    document.getElementById('panel-comm').className = 'panel' + (t==='comm' ? ' on' : '');
+    document.getElementById('panel-cea').className  = 'panel' + (t==='cea'  ? ' on' : '');
+    document.getElementById('tab-comm').className = 'tab' + (t==='comm' ? ' rc' : '');
+    document.getElementById('tab-cea').className  = 'tab' + (t==='cea'  ? ' rb' : '');
+    document.getElementById('pb').style.background = t==='comm' ? '#E63329' : '#1A6FBF';
+    document.getElementById('si').value = '';
+    document.querySelectorAll('.card').forEach(function(c){ c.style.display = ''; });
+    updProg();
+  }
+
+  // SEARCH
+  document.getElementById('si').addEventListener('input', function() {
+    var q = this.value.toLowerCase().trim();
+    document.querySelectorAll('#panel-' + cur + ' .card').forEach(function(c) {
+      var t = c.querySelector('.trm').textContent.toLowerCase();
+      var d = c.querySelector('.dfn').textContent.toLowerCase();
+      c.style.display = (!q || t.indexOf(q) >= 0 || d.indexOf(q) >= 0) ? '' : 'none';
+    });
+  });
+
+  function updProg() {
+    var cards = document.querySelectorAll('#panel-' + cur + ' .card');
+    var tot = cards.length, rev = 0;
+    cards.forEach(function(c) {
+      if (c.classList.contains('fr') || c.classList.contains('fb')) rev++;
+    });
+    var pct = tot ? Math.round(rev / tot * 100) : 0;
+    document.getElementById('pl').textContent = rev + ' of ' + tot + ' terms reviewed';
+    document.getElementById('pp').textContent = pct + '%';
+    document.getElementById('pb').style.width = pct + '%';
+  }
+
+  updProg();
+});
+</script>
+</body>
+</html>
